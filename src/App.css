@@ -77,3 +77,26 @@ h2 {
   text-overflow: ellipsis;
   white-space: normal;
 }
+
+.NavList {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: dotted;
+  border-radius: 4px;
+  font-weight: 500;
+  gap: 30px;
+  font-weight: bold;
+}
+
+.NavList button {
+  color: rgb(75, 158, 27);
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+}
+
+.NavList button:hover {
+  color: red;
+}
