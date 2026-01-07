@@ -1,8 +1,9 @@
 const Header = () => {
   return (
-    <h1 id="title" className="header">
-      Northcoders News
-    </h1>
+    <header id="title" className="header">
+      <h1>Northcoders News</h1>
+      <p>Where all the coding news in the north gathers</p>
+    </header>
   );
 };
 
