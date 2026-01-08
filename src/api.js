@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const baseURL = axios.create({ baseURL: "" });
+const baseURL = axios.create({ baseURL: "http://localhost:9090" });
+const host = "http://localhost:9090";
 
-export const fetchAllArticles = async () => {
+export const fetchAllTestArticles = async () => {
   return [
     {
       title: "Running a Node App",
@@ -13,6 +14,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?w=700&h=700",
+      article_id: 1,
     },
     {
       title:
@@ -24,6 +26,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?w=700&h=700",
+      article_id: 2,
     },
     {
       title: "22 Amazing open source React projects",
@@ -34,6 +37,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?w=700&h=700",
+      article_id: 3,
     },
     {
       title: "Making sense of Redux",
@@ -44,6 +48,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?w=700&h=700",
+      article_id: 4,
     },
     {
       title: "Please stop worrying about Angular 3",
@@ -54,6 +59,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/14011035/pexels-photo-14011035.jpeg?w=700&h=700",
+      article_id: 5,
     },
     {
       title:
@@ -65,6 +71,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/4383298/pexels-photo-4383298.jpeg?w=700&h=700",
+      article_id: 6,
     },
     {
       title: "Using React Native: One Year Later",
@@ -75,6 +82,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/6424586/pexels-photo-6424586.jpeg?w=700&h=700",
+      article_id: 7,
     },
     {
       title: "Express.js: A Server-Side JavaScript Framework",
@@ -85,6 +93,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/11035482/pexels-photo-11035482.jpeg?w=700&h=700",
+      article_id: 8,
     },
     {
       title: "Learn HTML5, CSS3, and Responsive WebSite Design in One Go",
@@ -95,6 +104,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?w=700&h=700",
+      article_id: 9,
     },
     {
       title:
@@ -106,6 +116,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/11035481/pexels-photo-11035481.jpeg?w=700&h=700",
+      article_id: 10,
     },
     {
       title: "Designing Better JavaScript APIs",
@@ -116,6 +127,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/5483071/pexels-photo-5483071.jpeg?w=700&h=700",
+      article_id: 11,
     },
     {
       title: "The battle for Node.js security has only begun",
@@ -126,6 +138,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/10845119/pexels-photo-10845119.jpeg?w=700&h=700",
+      article_id: 12,
     },
     {
       title: "What does Jose Mourinho's handwriting say about his personality?",
@@ -136,6 +149,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg?w=700&h=700",
+      article_id: 13,
     },
     {
       title: "Who Will Manage Your Club in 2021?",
@@ -146,6 +160,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/209841/pexels-photo-209841.jpeg?w=700&h=700",
+      article_id: 14,
     },
     {
       title: "Why do England managers keep making the same mistakes?",
@@ -156,6 +171,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/262524/pexels-photo-262524.jpeg?w=700&h=700",
+      article_id: 15,
     },
     {
       title: "History of FC Barcelona",
@@ -166,6 +182,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/102448/pexels-photo-102448.jpeg?w=700&h=700",
+      article_id: 16,
     },
     {
       title: "Which current Premier League manager was the best player?",
@@ -176,6 +193,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/47343/the-ball-stadion-horn-corner-47343.jpeg?w=700&h=700",
+      article_id: 17,
     },
     {
       title:
@@ -187,6 +205,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/1884576/pexels-photo-1884576.jpeg?w=700&h=700",
+      article_id: 18,
     },
     {
       title: "Who are the most followed clubs and players on Instagram?",
@@ -197,6 +216,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/685382/pexels-photo-685382.jpeg?w=700&h=700",
+      article_id: 19,
     },
     {
       title: "History of Football",
@@ -207,6 +227,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?w=700&h=700",
+      article_id: 20,
     },
     {
       title: "Agility Training Drills For Football Players",
@@ -217,6 +238,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/3448250/pexels-photo-3448250.jpeg?w=700&h=700",
+      article_id: 21,
     },
     {
       title: "Defensive Metrics: Measuring the Intensity of a High Press",
@@ -227,6 +249,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/906073/pexels-photo-906073.jpeg?w=700&h=700",
+      article_id: 22,
     },
     {
       title: "Sunday league football",
@@ -237,6 +260,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/774321/pexels-photo-774321.jpeg?w=700&h=700",
+      article_id: 23,
     },
     {
       title: "Game of talents: management lessons from top football coaches",
@@ -247,6 +271,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/168872/pexels-photo-168872.jpeg?w=700&h=700",
+      article_id: 24,
     },
     {
       title: "Sweet potato & butternut squash soup with lemon & garlic toast",
@@ -257,6 +282,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?w=700&h=700",
+      article_id: 25,
     },
     {
       title: "HOW COOKING HAS CHANGED US",
@@ -267,6 +293,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/2284166/pexels-photo-2284166.jpeg?w=700&h=700",
+      article_id: 26,
     },
     {
       title: "Thanksgiving Drinks for Everyone",
@@ -277,6 +304,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?w=700&h=700",
+      article_id: 27,
     },
     {
       title: "High Altitude Cooking",
@@ -287,6 +315,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg?w=700&h=700",
+      article_id: 28,
     },
     {
       title: "A BRIEF HISTORY OF FOOD—NO BIG DEAL",
@@ -297,6 +326,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/357743/pexels-photo-357743.jpeg?w=700&h=700",
+      article_id: 29,
     },
     {
       title:
@@ -308,6 +338,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/175753/pexels-photo-175753.jpeg?w=700&h=700",
+      article_id: 30,
     },
     {
       title: "What to Cook This Week",
@@ -318,6 +349,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?w=700&h=700",
+      article_id: 31,
     },
     {
       title: "Halal food: Keeping pure and true",
@@ -328,6 +360,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/954677/pexels-photo-954677.jpeg?w=700&h=700",
+      article_id: 32,
     },
     {
       title: "Seafood substitutions are increasing",
@@ -338,6 +371,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?w=700&h=700",
+      article_id: 33,
     },
     {
       title: "The Notorious MSG’s Unlikely Formula For Success",
@@ -348,6 +382,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?w=700&h=700",
+      article_id: 34,
     },
     {
       title: "Stone Soup",
@@ -358,6 +393,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/33242/cooking-ingredient-cuisine-kitchen.jpg?w=700&h=700",
+      article_id: 35,
     },
     {
       title: "The vegan carnivore?",
@@ -368,6 +404,7 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?w=700&h=700",
+      article_id: 36,
     },
     {
       title: "TenHag the man!",
@@ -436,6 +473,40 @@ export const fetchAllArticles = async () => {
       votes: 0,
       article_img_url:
         "https://images.pexels.com/photos/774321/pexels-photo-774321.jpeg?w=700&h=700",
+      article_id: 37,
     },
   ];
+};
+
+export const fetchAllArticles = async () => {
+  const result = await fetch(`${host}/api/articles`).then(async (res) => {
+    return await res.json();
+  });
+
+  return result.articles;
+};
+
+export const fetchSingleArticle = async (id) => {
+  const result = await fetch(`${host}/api/articles/${id}`).then(async (res) => {
+    return await res.json();
+  });
+  return result.article;
+};
+
+export const getCommentsByID = async (id) => {
+  const result = await fetch(`${host}/api/articles/${id}/comments`).then(
+    async (res) => {
+      return await res.json();
+    }
+  );
+  return result.comments;
+};
+
+// REFACTOR THIS
+
+
+export const handleVote = (id, incVotes) => {
+  baseURL.patch(`/api/articles/${id}`, {
+    inc_votes: incVotes,
+  });
 };

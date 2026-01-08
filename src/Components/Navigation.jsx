@@ -4,7 +4,7 @@ const Navigation = () => {
   const navigate = useNavigate;
   return (
     <ul className="NavList">
-      <button>ALL ARTICLES</button>
+      <a href="/articles">ALL ARTICLES</a>
 
       <button>ALL TOPICS</button>
 
