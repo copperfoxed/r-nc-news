@@ -1,12 +1,10 @@
 import upvote from "../../assets/upvote-svgrepo-com.svg";
 import downvote from "../../assets/downvote-svgrepo-com.svg";
-import { UpVoteArticle, DownVoteArticle } from "../UtilComps/Utils";
 import { handleVote } from "../../api";
 import { useState, useEffect } from "react";
 
 const Voting = (props) => {
   const { articleid, articlevotes } = props;
-  // const [isLoading, setIsLoading] = useState(true);
   const [optimisticVotes, setOptimisticVotes] = useState(0);
 
   const handleVotes = (inc) => {
@@ -17,7 +15,6 @@ const Voting = (props) => {
   };
   const totalVotes = articlevotes + optimisticVotes;
 
-  console.log(totalVotes, typeof articlevotes);
   return (
     <div className="Voting">
       <button className="upvote" onClick={() => handleVotes(1)}>

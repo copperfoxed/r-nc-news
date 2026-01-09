@@ -4,7 +4,7 @@ import { Loader } from "../UtilComps/Utils";
 import IndividualArticleDisplay from "./IndividualArticleDisplay";
 
 const ArticlesSinglePage = () => {
-  const { comments, article, isLoading, isError } = useSingleArticle();
+  const { article, isLoading, isError } = useSingleArticle();
   if (isLoading) return <Loader />;
   if (!article) return <p>{article.articleId} not found</p>;
   if (isError) return <p>Uh oh! We ran into a problem!</p>;
@@ -12,7 +12,7 @@ const ArticlesSinglePage = () => {
   return (
     <div className="ArticleSinglePage">
       <IndividualArticleDisplay article={article} />
-      <CommentsList comments={comments} />
+      <CommentsList article_id={article.article_id} />
     </div>
   );
 };
