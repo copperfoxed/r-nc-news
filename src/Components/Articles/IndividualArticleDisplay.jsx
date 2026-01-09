@@ -1,6 +1,4 @@
-import upvote from "../../assets/upvote-svgrepo-com.svg";
-import downvote from "../../assets/downvote-svgrepo-com.svg";
-import { UpVoteArticle, DownVoteArticle } from "../UtilComps/Utils";
+import Voting from "./ArticleVoting";
 
 const IndividualArticleDisplay = (props) => {
   const { article } = props;
@@ -15,22 +13,12 @@ const IndividualArticleDisplay = (props) => {
         <p>{article.body}</p>
         <footer>Created at: {formattedArticleDate}</footer>
       </div>
-      <div className="Voting">
-        <button
-          className="upvote"
-          onClick={() => UpVoteArticle(article.article_id)}
-        >
-          <img src={upvote} />
-        </button>
-        <h4>Votes:</h4>
-        <p> {article.votes}</p>
-        <button
-          className="downvote"
-          onClick={() => DownVoteArticle(article.article_id)}
-        >
-          <img src={downvote} />
-        </button>
-      </div>
+      {/* OPTOMISTIC RENDERING CHECK IT OUT YOU  
+      .then() useState to update the voting, if the promise doesnt resolve
+      .catch() and go "uh oh?!"
+      */}
+
+      <Voting articleid={article.article_id} articlevotes={article.votes} />
     </div>
   );
 };

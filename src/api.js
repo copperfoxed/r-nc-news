@@ -503,10 +503,8 @@ export const getCommentsByID = async (id) => {
 };
 
 // REFACTOR THIS
-
-
 export const handleVote = (id, incVotes) => {
-  baseURL.patch(`/api/articles/${id}`, {
+  return baseURL.patch(`/api/articles/${id}`, {
     inc_votes: incVotes,
   });
 };
